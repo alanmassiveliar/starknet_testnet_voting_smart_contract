@@ -1,0 +1,57 @@
+[
+    {
+        "members": [
+            {
+                "name": "yes_votes",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "no_votes",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "VotesCount",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "inputs": [
+            {
+                "name": "vote",
+                "type": "felt"
+            }
+        ],
+        "name": "vote",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "get_state",
+        "outputs": [
+            {
+                "name": "state",
+                "type": "VotesCount"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "addresses_len",
+                "type": "felt"
+            },
+            {
+                "name": "addresses",
+                "type": "felt*"
+            }
+        ],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    }
+]
